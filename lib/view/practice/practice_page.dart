@@ -12,7 +12,7 @@ class _PracticePageState extends State<PracticePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Practice'),
+        title: const Text('Practice'),
       ),
       body: Column(
         children: [],

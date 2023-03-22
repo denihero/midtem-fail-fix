@@ -11,7 +11,14 @@ class GridCard extends StatelessWidget {
     return Padding(
         padding: const EdgeInsets.all(20.0),
         child: InkWell(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => menuItem.page,
+                ),
+              );
+            },
             child: Center(
               child: Column(
                 children: [

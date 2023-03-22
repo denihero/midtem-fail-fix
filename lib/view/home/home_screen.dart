@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mideterm_fail/domain/model/grid_menu_model.dart';
 import 'package:mideterm_fail/view/home/widget/grid_card.dart';
+import 'package:mideterm_fail/view/learning/learning_screen.dart';
+import 'package:mideterm_fail/view/practice/practice_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -11,8 +13,8 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   List menuList = [
-    MenuItem(Icons.school, 'Learning',),
-    MenuItem(Icons.check, 'Practice'),
+    MenuItem(Icons.school, 'Learning',const LearningPage()),
+    MenuItem(Icons.check, 'Practice',const PracticePage()),
   ];
 
   @override

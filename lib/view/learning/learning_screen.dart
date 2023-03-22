@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mideterm_fail/view/learning/subpage/detail_learning_page.dart';
 
 class LearningPage extends StatefulWidget {
   const LearningPage({Key? key}) : super(key: key);
@@ -14,10 +15,20 @@ class _LearningPageState extends State<LearningPage> {
       appBar: AppBar(
         title: Text('Learning'),
       ),
-      body: Column(
-        children: [
-
-        ],
+      body: ListView.builder(
+        itemCount: 1,
+        itemBuilder: (BuildContext context, int index) {
+          return ListTile(
+            leading: Text("${index + 1}"),
+            title: const Text('Цвет, форма, размер'),
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => DetailLearningPage()));
+            },
+          );
+        },
       ),
     );
   }

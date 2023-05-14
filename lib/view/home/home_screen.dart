@@ -13,8 +13,8 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   List menuList = [
-    MenuItem(Icons.school, 'Learning',const LearningPage()),
-    MenuItem(Icons.check, 'Practice',const PracticePage()),
+    MenuItem(Icons.school, 'Окуу',const LearningPage()),
+    MenuItem(Icons.check, 'Тажрыйба',const PracticePage()),
   ];
 
   @override
